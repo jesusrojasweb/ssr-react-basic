@@ -1,34 +1,34 @@
 {
-  "name": "node-http-server",
+  "name": "ssr-react-basic",
   "version": "1.0.0",
-  "description": "Node.js example server starter project",
+  "description": "Server Side render React con Express",
   "main": "src/server.js",
   "engines": {
     "npm": "6.x",
     "node": "10.*.*"
   },
   "scripts": {
-    "start": "webpack && node build/server.js"
+    "start": "node build/server.js",
+    "build": "webpack"
   },
   "dependencies": {
     "@babel/cli": "7.12.10",
     "@babel/core": "7.12.10",
     "@babel/polyfill": "7.12.1",
+    "express": "4.17.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "5.2.1"
+  },
+  "devDependencies": {
     "@babel/preset-env": "7.12.11",
     "@babel/preset-flow": "7.12.1",
     "@babel/preset-react": "7.12.10",
     "babel-loader": "8.2.2",
     "babel-plugin-transform-class-properties": "6.24.1",
-    "express": "4.17.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "styled-components": "5.2.1",
     "webpack": "5.18.0",
     "webpack-cli": "4.4.0",
     "webpack-node-externals": "2.5.2"
-  },
-  "devDependencies": {
-    "nodemon": "1.18.4"
   },
   "keywords": []
 }
